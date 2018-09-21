@@ -1,6 +1,6 @@
 from p2pool.bitcoin import networks
 
-PARENT = networks.nets['digibyteils']
+PARENT = networks.nets['digibyte']
 SHARE_PERIOD=25
 CHAIN_LENGTH=24*60*60//10
 REAL_CHAIN_LENGTH=24*60*60//10
@@ -15,7 +15,7 @@ PERSIST=True
 WORKER_PORT=5027
 BOOTSTRAP_ADDRS='crypto.office-on-the.net p2p-spb.xyz 46.188.44.20 siberia.mine.nu gigablock.mine.nu tomsk.mine.nu 45.32.210.32'.split(' ')
 ANNOUNCE_CHANNEL='#p2pool'
-VERSION_CHECK = lambda v: None if 6160400 <= v else 'DigiByte version too old. Upgrade to 6.16.4 or newer!'
+VERSION_CHECK = lambda v: None if 6160500 <= v else 'DigiByte version too old. Upgrade to 6.16.5 or newer!'
 VERSION_WARNING = lambda v: None
 SOFTFORKS_REQUIRED = set(['nversionbips', 'csv', 'segwit'])
 MINIMUM_PROTOCOL_VERSION = 1600
