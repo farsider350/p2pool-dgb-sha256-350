@@ -15,9 +15,9 @@ PERSIST = True
 WORKER_PORT = 5027
 BOOTSTRAP_ADDRS = 'crypto.office-on-the.net p2p-spb.xyz 46.188.44.20 siberia.mine.nu gigablock.mine.nu tomsk.mine.nu 45.32.210.32 triplezen.tk'.split(' ')
 ANNOUNCE_CHANNEL = '#p2pool'
-VERSION_CHECK = lambda v: None if 6170200 <= v else 'DigiByte version too old. Upgrade to 6.17.2 or newer!'
+VERSION_CHECK = lambda v: None if 7170200 <= v else 'DigiByte version too old. Upgrade to 7.17.2 or newer!'
 VERSION_WARNING = lambda v: None
-SOFTFORKS_REQUIRED = set(['nversionbips', 'csv', 'segwit', 'reservealgo'])
+SOFTFORKS_REQUIRED = set(['nversionbips', 'csv', 'segwit', 'reservealgo', 'odo'])
 MINIMUM_PROTOCOL_VERSION = 1600
 NEW_MINIMUM_PROTOCOL_VERSION = 1700
 SEGWIT_ACTIVATION_VERSION = 17
